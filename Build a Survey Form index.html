@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+  <head>
+    <title>Build a Survey Form</title>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='styles.css'>
+    </head>
+
+  <body>
+    <h1 id='title'>Build a Survey Form</h1>
+    <p id='description'>Learn to build a survey form</p>
+    <form id='survey-form'>
+      <fieldset>
+
+      <label id='name-label'>Enter full name: <input id='name' type='text' required placeholder='John Doe'></input></label>
+
+      <label id='email-label'>Enter email: <input id='email' type='email' required placeholder='johndoe@email.com '></input></label>
+
+      <label id='number-label'>Enter your age: 
+        <input id='number' type='number' min = '13', max='120' placeholder='32'></input></label>
+      </fieldset>
+
+<fieldset>
+      <label>Which is better?
+      <select id='dropdown'>
+        <option value=''>(select one)</option>
+        <option value='sunset'>Sunset</option>
+        <option value='sunrise'>Sunrise</option>
+        </select>
+        </label>
+</fieldset>
+
+<fieldset>
+      <legend>Select destination</legend>
+      <input name='nature' type='radio' checked value='mountain'>Mountain</input>
+      <input name='nature' type='radio' value='beach'>Beach</input>
+</fieldset>
+
+<fieldset>
+      <input type='checkbox' value="1">One</input>
+      <input type='checkbox' value='2'>Two</input>
+      <input type='checkbox' value='3'>Three</input>
+      <input type='checkbox' value='4'>Four</input>
+      <input type='checkbox' value='5'>Five</input>
+</fieldset>
+
+<label>Additional Comments
+<textarea rows='3' cols='30' placeholder='Please provide any additional information'></textarea>
+</label>
+<input type='submit' id='submit'></input>
+</form>
+</body>
+</hmtl>
